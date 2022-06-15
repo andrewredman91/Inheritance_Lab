@@ -24,10 +24,16 @@ public abstract class Employee {
     }
 
     public void getNewSalary(double raise) {
+        if (raise > 0) {
             salary += raise;
+        }
+
     }
 
     public double payBonus(){
         return salary / 100.00;
+    }
+    public void setName(String newName){
+        name = newName;
     }
 }
